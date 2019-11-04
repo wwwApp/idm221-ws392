@@ -1,3 +1,17 @@
+/**
+* Utils
+*/
+.screen-reader-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
+}
+
 /** 
 * General styles
 */
@@ -14,6 +28,11 @@ ul {
 
 body {
   overflow-x: hidden;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 .work {
@@ -33,30 +52,30 @@ body {
   align-items: center;
 }
 
-.more {
+.btn-more {
   position: absolute;
   right: 0.75em;
   top: 45vh;
-  width: 1em;
-  height: auto;
-  cursor: pointer;
+
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
-/* .is-current-more {
-    animation: diminish 2s forwards;
-} */
+.btn-more svg {
+  width: 1em;
+  height: auto;
+}
+
 @media screen and (min-width: 786px) {
-  .more {
+  .btn-more svg {
     right: 5vw;
     width: 1.25em;
-    -webkit-transition: -webkit-transform 1s;
-    transition: -webkit-transform 1s;
-    -o-transition: transform 1s;
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s;
   }
 
-  .more:hover {
+  .btn-more:hover {
     -webkit-transform: translateX(10px);
     -ms-transform: translateX(10px);
     transform: translateX(10px);
@@ -438,6 +457,10 @@ body {
   .papermill-anim-container {
     max-width: 640px;
   }
+}
+
+.papermill-anim {
+  width: 100%;
 }
 /* 
 * Credit to: https://codepen.io/matchboxhero/pen/bomWGK?editors=1100

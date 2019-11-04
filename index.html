@@ -59,13 +59,14 @@
     <main class="work-scroller home" role="contentinfo">
       <section id="about" class="work about">
         <div class="work-desc">
-          <p class="title work-desc-item">Woo Song</p>
+          <h1 class="title work-desc-item">Woo Song</h1>
           <p class="info work-desc-item">UI/UX Developer</p>
           <p class="intro work-desc-item">
             I'm currently studying at Drexel University to bring you the best
             experience out of your devices!
           </p>
           <div class="contact work-desc-item">
+            <span class="screen-reader-only">Contact: </span>
             <a href="mailto:ws392@drexel.edu">email</a>
             <a
               href="https://www.linkedin.com/in/wooyoung-song-661345136/"
@@ -79,19 +80,18 @@
       <section id="one" class="work wordpress">
         <div class="work-desc">
           <h1 id="wordpress-label" class="title work-desc-item">
-            WordPress Theme
+            <span class="screen-reader-only">Project name: </span>WordPress Theme
           </h1>
           <ul class="info work-desc-item" aria-labelledby="wordpress-label">
             <li>Custom Theme Design</li>
             <li>Summer 2018</li>
           </ul>
         </div>
+        <button class="btn-more">
         <svg
-          class="more"
           onclick="moveToDetail('wordpress.html')"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
-          id="Capa_1"
           x="0px"
           y="0px"
           width="512px"
@@ -104,23 +104,22 @@
               fill="#FFFFFF"
             />
           </g>
-        </svg>
+        </svg></button>
       </section>
       <!-- Aurora -->
       <section id="two" class="work aurora">
         <div class="work-desc">
-          <h1 id="aurora-label" class="title work-desc-item">Aurora</h1>
+          <h1 id="aurora-label" class="title work-desc-item"><span class="screen-reader-only">Project name: </span>Aurora</h1>
           <ul class="info work-desc-item" aria-labelledby="aurora-label">
             <li>Back-End Dev</li>
             <li>Summer 2018</li>
           </ul>
         </div>
+        <button class="btn-more">
         <svg
-          class="more"
           onclick="moveToDetail('aurora.html')"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
-          id="Capa_1"
           x="0px"
           y="0px"
           width="512px"
@@ -133,7 +132,7 @@
               fill="#FFFFFF"
             />
           </g>
-        </svg>
+        </svg></button>
         <img
           class="bg-asset aurora-mascot"
           src="assets/images/aurora/auroraAvatar.png"
@@ -144,6 +143,7 @@
       <section id="three" class="work hexagon">
         <div class="work-desc">
           <h1 id="hexagon-label" class="title work-desc-item">
+            <span class="screen-reader-only">Project name: </span>
             Hexagon Defense
           </h1>
           <ul class="info work-desc-item" aria-labelledby="hexagon-label">
@@ -151,12 +151,11 @@
             <li>Summer 2018</li>
           </ul>
         </div>
+        <button class="btn-more">
         <svg
-          class="more"
           onclick="moveToDetail('hexagon.html')"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
-          id="Capa_1"
           x="0px"
           y="0px"
           width="512px"
@@ -169,31 +168,32 @@
               fill="#FFFFFF"
             />
           </g>
-        </svg>
+        </svg></button>
         <img
           class="bg-asset hexagon-portal"
           src="assets/images/hexagon/img_portal.png"
+          alt="Hexagon Defense - Portal"
         />
         <img
           class="bg-asset hexagon-defender"
           src="assets/images/hexagon/img_defender.png"
+          alt="Hexagon Defense - Defender"
         />
       </section>
       <!-- Papermill -->
       <section id="four" class="work papermill">
         <div class="work-desc">
-          <h1 id="papermill-label" class="title work-desc-item">Papermill</h1>
+          <h1 id="papermill-label" class="title work-desc-item"><span class="screen-reader-only">Project name: </span>Papermill</h1>
           <ul class="info work-desc-item" aria-labelledby="papermill-label">
             <li>UI/UX Design for App</li>
             <li>Spring 2018</li>
           </ul>
         </div>
+        <button class="btn-more">
         <svg
-          class="more"
           onclick="moveToDetail('papermill.html')"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
-          id="Capa_1"
           x="0px"
           y="0px"
           width="512px"
@@ -206,7 +206,7 @@
               fill="#FFFFFF"
             />
           </g>
-        </svg>
+        </svg></button>
 
         <div class="bg-asset papermill-anim-container">
           <svg
@@ -224,14 +224,14 @@
       <!-- Ghilbli Museum -->
       <section id="five" class="work ghibli">
         <div class="work-desc">
-          <h1 id="ghibli-label" class="title work-desc-item">Ghilbl Museum</h1>
+          <h1 id="ghibli-label" class="title work-desc-item"><span class="screen-reader-only">Project name: </span>Ghilbl Museum</h1>
           <ul class="info work-desc-item" aria-labelledby="ghibli-label">
             <li>UI/UX Design for Web</li>
             <li>Winter 2017</li>
           </ul>
         </div>
+        <button class="btn-more">
         <svg
-          class="more"
           onclick="moveToDetail('ghibli.html')"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -247,7 +247,7 @@
               fill="#FFFFFF"
             />
           </g>
-        </svg>
+        </svg></button>
 
         <div class="bg-asset ghibli-circle-container">
           <div class="ghilbi-circle"></div>
@@ -258,7 +258,7 @@
     </main>
 
     <!-- Timeline -->
-    <aside class="timeline home">
+    <div class="timeline home">
       <div class="timeline-group">
         <div class="bar"></div>
         <button
@@ -272,7 +272,7 @@
         <button class="circle circle-five" onclick="moveTo('6')"></button>
         <button class="circle circle-last"></div>
       </div>
-    </aside>
+    </div>
 
     <!-- Header -->
     <header class="header home" role="banner">

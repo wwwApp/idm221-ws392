@@ -1,15 +1,4 @@
 function init() {
-  //console.log("detail page loaded");
-  /* $(".work-detail-item")
-    .each(function(index) {
-      $(this)
-        .delay(500 * index)
-        .fadeIn(1000);
-    }); */
-  /* $(".work-detail-item").each(function(index) {
-    $(this).delay(500 * index).addClass('is-loading');
-  }); */
-
   // Give fadeIn effect to each item in work detail in order
   $(function() {
     var delays = [0, 150, 300, 450];
