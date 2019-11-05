@@ -49,8 +49,8 @@
   <body>
     <!-- Detail Page -->
     <main class="work-detail">
-      <h1 class="title work-detail-item">Aurora</h1>
-      <ul class="info work-detail-item">
+      <h1 id="work-title" class="title work-detail-item">Aurora</h1>
+      <ul class="info work-detail-item" aria-labelledby="work-title">
         <li>Back-End Dev</li>
         <li>Summer 2018</li>
         <li>Work Flow Optimization</li>
@@ -83,7 +83,7 @@
     </main>
 
     <!-- Header -->
-    <header class="header" role="banner">
+    <header class="header">
       <div class="logo" onclick="toHome()">woosong</div>
     </header>
     <div class="arrows">

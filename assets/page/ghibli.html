@@ -49,8 +49,8 @@
   <body>
     <!-- Detail Page -->
     <main class="work-detail">
-      <h1 class="title work-detail-item">Ghibli Museum</h1>
-      <ul class="info work-detail-item">
+      <h1 id="work-title" class="title work-detail-item">Ghibli Museum</h1>
+      <ul class="info work-detail-item" aria-labelledby="work-title">
         <li>UI/UX Design for Web</li>
         <li>Winter 2017</li>
         <li>User Interface Design</li>
@@ -85,14 +85,14 @@
         </p>
       </div>
       <div class="images work-detail-item">
-        <img src="../images/ghibli/desktop.png" alt="Ghibli Desktop Version" />
-        <img src="../images/ghibli/tablet.png" alt="Ghibli Tablet Version" />
-        <img src="../images/ghibli/mobile.png" alt="Ghibli Mobile Version" />
+        <img src="../images/ghibli/desktop.jpg" alt="Ghibli Desktop Version" />
+        <img src="../images/ghibli/tablet.jpg" alt="Ghibli Tablet Version" />
+        <img src="../images/ghibli/mobile.jpg" alt="Ghibli Mobile Version" />
       </div>
     </main>
 
     <!-- Header -->
-    <header class="header" role="banner">
+    <header class="header">
       <div class="logo" onclick="toHome()">woosong</div>
     </header>
     <div class="arrows">
