@@ -1,7 +1,7 @@
 function init() {
   $(function() {
     var delays = [0, 150, 300];
-    $(".about .work-desc-item").each(function(i) {
+    $(".work--about .work-desc-item").each(function(i) {
       setTimeout(
         function(item) {
           item.addClass("is-loading");
