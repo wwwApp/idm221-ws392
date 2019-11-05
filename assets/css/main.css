@@ -35,6 +35,10 @@ button {
   border: none;
 }
 
+.w-shadow {
+  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.5);
+}
+
 .work {
   position: relative;
   display: -webkit-box;
@@ -107,11 +111,11 @@ button {
   color: #dd6b6b;
 }
 
-.wordpress {
+.work--wordpress {
   background: #f7c1b3;
 }
 
-.aurora {
+.work--aurora {
   position: relative;
   background-color: #202020;
   background-image: -webkit-radial-gradient(
@@ -150,15 +154,15 @@ button {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
-.hexagon {
+.work--hexagon {
   background: #300f40;
 }
 
-.papermill {
+.work--papermill {
   background: orange;
 }
 
-.ghibli {
+.work--ghibli {
   background: #54c7d1;
 }
 
@@ -325,7 +329,7 @@ button {
   position: absolute;
 }
 
-.wordpress .title:before {
+.work--wordpress .title:before {
   color: #31549e;
   content: "[";
   margin-right: 1em;
@@ -333,7 +337,7 @@ button {
   animation: opacity 2s infinite;
 }
 
-.wordpress .title:after {
+.work--wordpress .title:after {
   color: #31549e;
   content: "]";
   margin-left: 1em;
