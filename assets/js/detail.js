@@ -53,3 +53,8 @@ function toNext() {
 function toHome() {
   location.href = "../../index.html";
 }
+
+/* Btn event handlers */
+$(".logo").click(toHome);
+$(".btn-next").click(toNext);
+$(".btn-prev").click(toPrev);
