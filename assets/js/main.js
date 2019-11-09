@@ -17,23 +17,26 @@ init();
 
 /* Scroll snap using JQuery plugin + timeline animation */
 const circles = document.querySelectorAll(".circle");
-const moreButtons = document.querySelectorAll(".more");
-const workDescriptions = document.querySelectorAll(".work-desc");
+const works = document.querySelectorAll(".work");
 
 $(() => {
   $.scrollify({
     section: ".work",
     after: () => {
-      // Circles on timeline react to the current page index
-      for (var i = 0; i < circles.length; i++) {
-        if (circles[i].classList.contains("is-current-circle"))
-          circles[i].classList.remove("is-current-circle");
+      // add/remove aria and class for current items
+      for (var i = 0; i < works.length; i++) {
+        circles[i].classList.remove("is-current-circle");
+        circles[i].removeAttribute("aria-current");
+        works[i].setAttribute("aria-hidden", "true");
       }
 
       // currentIndex returns index of current div (starting from 0)
       var currentIndex = $.scrollify.currentIndex();
       circles[currentIndex].classList.add("is-current-circle");
+      circles[currentIndex].setAttribute("aria-current", "step");
+      works[currentIndex].removeAttribute("aria-hidden");
 
+      // loading effect
       var currentDesc = $.scrollify
         .current()
         .attr("class")

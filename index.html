@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
 
     <!-- Favicon -->
     <link
@@ -71,7 +72,11 @@
         </div>
       </section>
       <!-- WordPress Theme -->
-      <section id="one" class="work work--wordpress w-shadow">
+      <section
+        id="one"
+        class="work work--wordpress dark-font"
+        aria-hidden="true"
+      >
         <div class="work-desc">
           <h1 id="wordpress-label" class="title work-desc-item">
             <span class="screen-reader-only">Project name: </span>WordPress
@@ -82,7 +87,7 @@
             <li>Summer 2018</li>
           </ul>
         </div>
-        <button class="btn-more">
+        <button class="btn-more" aria-label="More About This Project">
           <svg
             onclick="moveToDetail('wordpress.html')"
             xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +108,7 @@
         </button>
       </section>
       <!-- Aurora -->
-      <section id="two" class="work work--aurora">
+      <section id="two" class="work work--aurora" aria-hidden="true">
         <div class="work-desc">
           <h1 id="aurora-label" class="title work-desc-item">
             <span class="screen-reader-only">Project name: </span>Aurora
@@ -113,7 +118,7 @@
             <li>Summer 2018</li>
           </ul>
         </div>
-        <button class="btn-more">
+        <button class="btn-more" aria-label="More About This Project">
           <svg
             onclick="moveToDetail('aurora.html')"
             xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +144,7 @@
         />
       </section>
       <!-- Hexagon Defense -->
-      <section id="three" class="work work--hexagon">
+      <section id="three" class="work work--hexagon" aria-hidden="true">
         <div class="work-desc">
           <h1 id="hexagon-label" class="title work-desc-item">
             <span class="screen-reader-only">Project name: </span>
@@ -150,7 +155,7 @@
             <li>Summer 2018</li>
           </ul>
         </div>
-        <button class="btn-more">
+        <button class="btn-more" aria-label="More About This Project">
           <svg
             onclick="moveToDetail('hexagon.html')"
             xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +186,7 @@
         />
       </section>
       <!-- Papermill -->
-      <section id="four" class="work work--papermill">
+      <section id="four" class="work work--papermill" aria-hidden="true">
         <div class="work-desc">
           <h1 id="papermill-label" class="title work-desc-item">
             <span class="screen-reader-only">Project name: </span>Papermill
@@ -191,7 +196,7 @@
             <li>Spring 2018</li>
           </ul>
         </div>
-        <button class="btn-more">
+        <button class="btn-more" aria-label="More About This Project">
           <svg
             onclick="moveToDetail('papermill.html')"
             xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +230,7 @@
         </div>
       </section>
       <!-- Ghilbli Museum -->
-      <section id="five" class="work work--ghibli">
+      <section id="five" class="work work--ghibli" aria-hidden="true">
         <div class="work-desc">
           <h1 id="ghibli-label" class="title work-desc-item">
             <span class="screen-reader-only">Project name: </span>Ghilbl Museum
@@ -235,7 +240,7 @@
             <li>Winter 2017</li>
           </ul>
         </div>
-        <button class="btn-more">
+        <button class="btn-more" aria-label="More About This Project">
           <svg
             onclick="moveToDetail('ghibli.html')"
             xmlns="http://www.w3.org/2000/svg"
@@ -269,14 +274,35 @@
         <div class="bar"></div>
         <button
           class="circle circle-about is-current-circle"
+          aria-label="Project Circle 1"
           onclick="moveTo('1')"
         ></button>
-        <button class="circle circle-one" onclick="moveTo('2')"></button>
-        <button class="circle circle-two" onclick="moveTo('3')"></button>
-        <button class="circle circle-three" onclick="moveTo('4')"></button>
-        <button class="circle circle-four" onclick="moveTo('5')"></button>
-        <button class="circle circle-five" onclick="moveTo('6')"></button>
-        <div class="circle circle-last"></div>
+        <button
+          class="circle circle-one"
+          aria-label="Project Circle 2"
+          onclick="moveTo('2')"
+        ></button>
+        <button
+          class="circle circle-two"
+          aria-label="Project Circle 3"
+          onclick="moveTo('3')"
+        ></button>
+        <button
+          class="circle circle-three"
+          aria-label="Project Circle 4"
+          onclick="moveTo('4')"
+        ></button>
+        <button
+          class="circle circle-four"
+          aria-label="Project Circle 5"
+          onclick="moveTo('5')"
+        ></button>
+        <button
+          class="circle circle-five"
+          aria-label="Project Circle 6"
+          onclick="moveTo('6')"
+        ></button>
+        <div class="circle circle-last" aria-label="Project Circle Last"></div>
       </div>
     </aside>
 
