@@ -84,17 +84,15 @@
 .work--aurora {
   position: relative;
   background-color: #202020;
-  background-image: -webkit-radial-gradient(
+  background-image: -o-radial-gradient(
       white,
       rgba(255, 255, 255, 0.2) 2px,
       transparent 10px
     ),
-    -webkit-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent
-          5px),
-    -webkit-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent
-          10px),
-    -webkit-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)
-          2px, transparent 5px);
+    -o-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 5px),
+    -o-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 10px),
+    -o-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent
+          5px);
   background-image: -o-radial-gradient(
       white,
       rgba(255, 255, 255, 0.2) 2px,
@@ -218,10 +216,16 @@
   height: 13px;
   border-radius: 25px;
   background: white;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  -o-transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 .circle:hover {
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
   transform: scale(1.25);
 }
 
@@ -243,12 +247,14 @@
 
 @-webkit-keyframes grow {
   to {
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
   }
 }
 
 @keyframes grow {
   to {
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
   }
 }
