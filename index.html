@@ -264,42 +264,37 @@
     </main>
 
     <!-- Timeline -->
-    <aside class="timeline home">
+    <div class="timeline home">
       <div class="timeline-group">
         <div class="bar"></div>
-        <button
-          class="circle circle-about is-current-circle"
-          aria-label="Project Circle 1"
-          onclick="moveTo('1')"
-        ></button>
-        <button
-          class="circle circle-one"
-          aria-label="Project Circle 2"
-          onclick="moveTo('2')"
-        ></button>
-        <button
-          class="circle circle-two"
-          aria-label="Project Circle 3"
-          onclick="moveTo('3')"
-        ></button>
-        <button
-          class="circle circle-three"
-          aria-label="Project Circle 4"
-          onclick="moveTo('4')"
-        ></button>
-        <button
-          class="circle circle-four"
-          aria-label="Project Circle 5"
-          onclick="moveTo('5')"
-        ></button>
-        <button
-          class="circle circle-five"
-          aria-label="Project Circle 6"
-          onclick="moveTo('6')"
-        ></button>
-        <div class="circle circle-last" aria-label="Project Circle Last"></div>
+        <ul class="circle-group">
+          <li
+            class="circle circle-about is-current-circle"
+            aria-label="Project Circle 1"
+          >
+            <button class="circle__button" onclick="moveTo('1')"></button>
+          </li>
+          <li class="circle circle-one" aria-label="Project Circle 2">
+            <button class="circle__button" onclick="moveTo('2')"></button>
+          </li>
+          <li class="circle circle-two" aria-label="Project Circle 3">
+            <button class="circle__button" onclick="moveTo('3')"></button>
+          </li>
+          <li class="circle circle-three" aria-label="Project Circle 4">
+            <button class="circle__button" onclick="moveTo('4')"></button>
+          </li>
+          <li class="circle circle-four" aria-label="Project Circle 5">
+            <button class="circle__button" onclick="moveTo('5')"></button>
+          </li>
+          <li class="circle circle-five" aria-label="Project Circle 6">
+            <button class="circle__button" onclick="moveTo('6')"></button>
+          </li>
+          <li class="circle circle-last" tabindex="-1" aria-hidden="true">
+            <div></div>
+          </li>
+        </ul>
       </div>
-    </aside>
+    </div>
 
     <!-- Header -->
     <header class="header home">
